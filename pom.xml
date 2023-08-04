@@ -23,9 +23,11 @@
          <plugin>
             <!-- Building an executable jar -->
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
+            <artifactId>maven-compiler-plugin</artifactId>
             <version>3.1.0</version>
             <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
                <archive>
                   <manifest>
                      <!-- give full qualified name of your main class-->
